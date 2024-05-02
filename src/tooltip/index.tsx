@@ -14,8 +14,6 @@ export function CustomTooltip(props: CustomTooltipProps) {
   const { tooltipProps, tooltipVisible, tooltipRef, isAbove, tooltipPosition } =
     useCustomTooltip({ delay });
 
-  console.log(tooltipPosition);
-
   return (
     <div className="relative inline-block w-fit">
       <div className="group inline-block cursor-pointer" {...tooltipProps}>
