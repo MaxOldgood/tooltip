@@ -50,19 +50,19 @@ function App() {
       <div className=" absolute bottom-20 left-1/2 transform -translate-x-1/2 flex gap-5">
         <button
           onClick={() => setPosition("start")}
-          className=" p-2 bg-red-700 hover:bg-cyan-700 transition  text-white uppercase rounded-xl select-none font-bold w-fit "
+          className=" p-2 bg-cyan-700 hover:bg-gray-700 transition  text-white uppercase rounded-xl select-none font-bold w-fit "
         >
           Левый край
         </button>
         <button
           onClick={() => setPosition("center")}
-          className="  p-2 bg-gray-700 hover:bg-cyan-700 transition  text-white uppercase rounded-xl select-none font-bold w-fit "
+          className=" p-2 bg-cyan-700 hover:bg-gray-700 transition  text-white uppercase rounded-xl select-none font-bold w-fit "
         >
           центрировать
         </button>
         <button
           onClick={() => setPosition("end")}
-          className="  p-2 bg-red-700 hover:bg-cyan-700 transition  text-white uppercase rounded-xl select-none font-bold w-fit "
+          className=" p-2 bg-cyan-700 hover:bg-gray-700 transition  text-white uppercase rounded-xl select-none font-bold w-fit "
         >
           Правый край
         </button>
