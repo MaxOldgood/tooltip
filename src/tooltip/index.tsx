@@ -31,7 +31,8 @@ export function CustomTooltip(props: CustomTooltipProps) {
             right: tooltipPosition.right,
             backgroundColor: `${color === "dark" ? "#1F2937" : "#F3F4F6"}`,
             color: `${color === "dark" ? "#F3F4F6" : "#1F2937"}`,
-            minWidth: "300px",
+            width: "max-content",
+            maxWidth: "300px",
           }}
         >
           {title && <p className="text-base ">{title}</p>}
