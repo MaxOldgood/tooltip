@@ -14,6 +14,8 @@ export function CustomTooltip(props: CustomTooltipProps) {
   const { tooltipProps, tooltipVisible, tooltipRef, isAbove, tooltipPosition } =
     useCustomTooltip({ delay });
 
+  console.log(tooltipPosition);
+
   return (
     <div className="relative inline-block w-fit">
       <div className="group inline-block cursor-pointer" {...tooltipProps}>
@@ -25,16 +27,17 @@ export function CustomTooltip(props: CustomTooltipProps) {
           ref={tooltipRef}
           className={`absolute z-10 my-1 p-2 rounded-md shadow-md ${
             isAbove ? "bottom-full" : "top-full"
-          } whitespace-pre	`}
+          } whitespace-pre-wrap	 `}
           style={{
             left: tooltipPosition.left,
             right: tooltipPosition.right,
             backgroundColor: `${color === "dark" ? "#1F2937" : "#F3F4F6"}`,
             color: `${color === "dark" ? "#F3F4F6" : "#1F2937"}`,
+            minWidth: "300px",
           }}
         >
-          {title && <p className="text-base">{title}</p>}
-          <p className="text-sm ">{content}</p>
+          {title && <p className="text-base ">{title}</p>}
+          <p className="text-sm  ">{content}</p>
         </div>
       )}
     </div>
