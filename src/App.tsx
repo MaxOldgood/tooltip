@@ -37,8 +37,8 @@ function App() {
 
       <CustomTooltip
         title="О тултипе"
-        content={`Тултип по умолчанию сверху. Если сверху места не хватает, тогда снизу. Также он занимает всю доступную ширину.\nНо с помощью специального символа "\\n" можно перенести строку контента при использовании тултипа.
-        \nТакже он центрируется относительно своего хозяина. Пока ему хватает для этого места :)\nПонажимай на кнопки снизу, чтобы испытать его на разных расположениях!`}
+        content={`Тултип по умолчанию сверху. Если сверху места не хватает, тогда снизу. .\nC помощью специального символа "\\n" можно перенести строку контента при использовании тултипа.
+        \nТакже он центрируется относительно своего элемента-триггера. Пока ему хватает для этого места :)\nПонажимай на кнопки снизу, чтобы испытать его на разных расположениях!`}
         delay={100}
         color="light"
       >
@@ -47,7 +47,7 @@ function App() {
         </button>
       </CustomTooltip>
 
-      <div className=" absolute bottom-20 left-1/2 transform -translate-x-1/2 flex gap-5">
+      <div className=" absolute w-full bottom-20 left-1/2 transform -translate-x-1/2  flex justify-center items-center max-sm:flex-col  gap-3">
         <button
           onClick={() => setPosition("start")}
           className=" p-2 bg-cyan-700 hover:bg-gray-700 transition  text-white uppercase rounded-xl select-none font-bold w-fit "
