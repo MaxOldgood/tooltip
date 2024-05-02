@@ -6,7 +6,7 @@ function App() {
   return (
     <main
       style={{ justifyContent: "start", alignItems: `${position}` }}
-      className="p-10 w-screen bg-slate-300 h-screen flex flex-col gap-20"
+      className="p-10 w-screen bg-gradient-to-r from-blue-200 to-cyan-200 h-screen flex flex-col gap-20"
     >
       <CustomTooltip content="Тултипчик " title="Заголовок" delay={250}>
         <button className="p-2 bg-gray-700 hover:bg-cyan-700 transition  text-white uppercase rounded-xl select-none font-bold w-fit ml-auto">
